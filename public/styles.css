@@ -51,16 +51,9 @@ footer {
 
 
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
 
     .container {
-        min-height: auto;
-    }
-
-    .image-container {
-        min-height: auto;
+        min-height: 20px;
     }
 
     img {
