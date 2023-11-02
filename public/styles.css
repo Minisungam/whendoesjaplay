@@ -31,6 +31,14 @@ img {
     transition: 0.3s;
 }
 
+#moreInfoButton {
+    background-color: #222;
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 .hover-image:hover {
     content: url("jaclub.png");
 }
