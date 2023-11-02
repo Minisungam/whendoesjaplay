@@ -19,13 +19,25 @@
         </div>
         <div class="text-container">
             <h2>Ja Morant's Suspension Countdown</h2>
-            <p>Games left in suspension: <span id="gamesLeft">20</span></p>
+            <p>Games left in suspension: <span id="gamesLeft">Loading...</span></p>
         </div>
     </div>
     </div>
     <footer>
-        Made by <a href="https://github.com/minisungam" target="_blank">Christopher Magnus</a>. Inquiries may be sent <a href="mailto:admin@whendoesjaplay.com">here</a>.
+        Made by <a href="https://github.com/minisungam" target="_blank">Christopher Magnus</a>. Inquiries may be sent <a href="mailto:whendoesjaplay@minisungam.com">here</a>.
     </footer>
+    <script>
+        const gamesLeft = document.getElementById('gamesLeft');
+    
+        fetch('/.netlify/functions/getSusCD')
+            .then((response) => response.json())
+            .then((data) => {
+                gamesLeft.textContent = data.message;
+            })
+            .catch((error) => {
+                console.error('Error fetching data:', error);
+            });
+    </script>
 </body>
 </html>
 
