@@ -1,7 +1,7 @@
 const fs = require('fs').promises;
 const ical = require('node-ical');
 
-const icsFile = path.join(__dirname, './grizzlies.ics');
+const icsFile = './grizzlies.ics';
 
 const handler = async (event) => {
   try {
