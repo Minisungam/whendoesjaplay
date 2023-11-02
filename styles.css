@@ -16,7 +16,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 300px; /* Set a fixed height to match the image's height */
+    min-height: 300px; /* Set a fixed height to accommodate the tallest image and text */
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    min-height: 200px;
 }
 
 img {
@@ -26,9 +32,15 @@ img {
 }
 
 .hover-image:hover {
-    width: 200px;
-    height: auto;
     content: url("jaclub.png");
+}
+
+text-container {
+    text-align: center;
+}
+
+h1 {
+    line-height: 1.2; /* Adjust the line-height to vertically center the text */
 }
 
 footer {
