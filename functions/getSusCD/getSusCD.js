@@ -1,7 +1,7 @@
 const fs = require('fs').promises; // Use the promises version of fs
 const ical = require('node-ical');
 
-const icsFile = './grizzlies.ics';
+const icsFile = 'grizzlies.ics';
 
 const handler = async (event) => {
   try {
