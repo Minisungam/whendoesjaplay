@@ -43,6 +43,6 @@ function calculateRemainingGames(parsedData) {
   const playedGames = Object.values(parsedData).filter((event) => event.start <= today).length;
 
   // Subtract the number of played games from the total suspension games
-  const totalSuspensionGames = 25;
+  const totalSuspensionGames = 23;
   return totalSuspensionGames - playedGames;
 }
