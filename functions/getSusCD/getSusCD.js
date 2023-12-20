@@ -24,7 +24,7 @@ async function updateSuspensionCountdown() {
     // Parse the .ICS data
     const parsedData = ical.parseICS(data);
 
-    const gamesLeft = calculateRemainingGames(parsedData);
+    let gamesLeft = calculateRemainingGames(parsedData);
     if (gamesLeft < 0) {
       gamesLeft = 0;
     }
