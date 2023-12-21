@@ -20,17 +20,8 @@
         </div>
         <div class="text-container">
             <h2>Ja Morant's Suspension Countdown</h2>
-            <p>Ja Morant's first game back is Tuesday, December 19th, 2024.</p>
+            <p>Ja Morant's first game back from his suspension was Tuesday, December 19th, 2024.</p>
             <p>Games left in suspension: <span id="gamesLeft">Loading...</span></p>
-            <button id="moreInfoButton">More Info</button>
-            <p id="moreInfoText" style="display: none;">
-                <strong>THIS MAY NOT BE ACCURATE</strong><br><br>
-                This app currently functions by looking at the calendar of the Memphis Grizzlies games and 
-                subtracts the amount of games that have passed from the total amount suspension games.<br><br>
-                The schedule may change, in which case I'll do my best to update the calendar promptly.
-                The NBA may also change the suspension length or may not immediately release him after the amount 
-                of days are over until other requirements are met (like more counseling).    
-            </p>
         </div>
     </div>
     <footer>
@@ -38,16 +29,6 @@
     </footer>
     <script>
         const gamesLeft = document.getElementById('gamesLeft');
-        const moreInfoButton = document.getElementById('moreInfoButton');
-        const moreInfoText = document.getElementById('moreInfoText');
-        
-        moreInfoButton.addEventListener('click', () => {
-            if (moreInfoText.style.display === 'none') {
-                moreInfoText.style.display = 'block';
-            } else {
-                moreInfoText.style.display = 'none';
-            }
-        });
         
         fetch('/.netlify/functions/getSusCD')
             .then((response) => response.json())
