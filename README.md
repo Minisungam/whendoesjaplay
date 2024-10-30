@@ -6,6 +6,9 @@
 
 An extremely simple Netlify app that counts down the amount of games left in Ja Morant's 25 game suspension.
 
+> [!IMPORTANT]
+> As of 10/30/2024, the site is no longer active.
+
 ## Current features:
 
 Currently this app consists of 2 main entities.
