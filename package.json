@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-ical": "^0.16.1"
+    "node-ical": "^0.20.1"
   }
 }
